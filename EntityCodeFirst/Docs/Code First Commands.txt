@@ -1,0 +1,6 @@
+﻿Enable-Migrations -ContextTypeName HockeyContext -MigrationsDirectory Migrations\Hockey
+
+
+add-migration -ConfigurationTypeName EntityCodeFirst.Migrations.Hockey.Configuration "AddedCountry"
+
+update-database -ConfigurationTypeName EntityCodeFirst.Migrations.Hockey.Configuration
